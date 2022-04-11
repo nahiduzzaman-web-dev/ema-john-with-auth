@@ -9,7 +9,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.oathname || '/';
+    const from = location.state?.from?.pathname || '/';
 
     const [
         signInWithEmailAndPassword,
